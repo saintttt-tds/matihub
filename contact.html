@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Matihub</title>
+  <meta name="description" content="Get in touch with Matihub Construction & Drilling in Harare, Zimbabwe for a free site assessment and quote.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body data-page="contact">
+
+  <div id="site-header"></div>
+
+  <section class="page-banner" style="background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1350&q=80');">
+    <div class="container">
+      <h1>Contact Matihub</h1>
+      <p>Let's discuss your next construction or drilling project in Zimbabwe</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Head Office</h3>
+              <p>14 Coventry Road, Msasa, Harare, Zimbabwe</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>Office: +263 24 2 486 217<br>Mobile/WhatsApp: +263 77 234 5678</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>matihub@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Business Hours</h3>
+              <p>Monday - Friday: 7:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 1:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Request a Quote</h2>
+          <form id="quoteForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" required placeholder="Delight Ndlovu">
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Company name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required placeholder="delight@example.co.zw">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+263 77 123 4567">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interest *</label>
+              <select id="service" required>
+                <option value="">Select a service</option>
+                <option>Borehole &amp; Water Well Drilling</option>
+                <option>Geotechnical Drilling</option>
+                <option>Commercial Construction</option>
+                <option>Piling &amp; Foundations</option>
+                <option>Civil Infrastructure</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="details">Project Details</label>
+              <textarea id="details" rows="5" placeholder="Describe your project, location, timeline, and any specific requirements..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+            <p class="form-note" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="container">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=Msasa,+Harare,+Zimbabwe&output=embed" allowfullscreen="" loading="lazy" title="Matihub head office location in Msasa, Harare"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/pages/contact.js" defer></script>
+</body>
+</html>

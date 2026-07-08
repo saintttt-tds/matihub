@@ -1,0 +1,52 @@
+/* ============ ABOUT PAGE ============ */
+
+.about-content { padding: 80px 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.about-text h2 { font-size: 2.2rem; color: var(--navy); margin-bottom: 20px; }
+.about-text p { margin-bottom: 20px; color: var(--slate-mid); }
+.about-image img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
+
+.values { padding: 60px 0; background: white; }
+.values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.value-card { text-align: center; padding: 30px; background: var(--panel); border-radius: var(--radius-md); }
+.value-card i { font-size: 2.5rem; color: var(--clay); margin-bottom: 15px; }
+
+.team { padding: 80px 0; background: var(--cream); }
+
+/* Leadership hierarchy */
+.org-chart { display: flex; flex-direction: column; align-items: center; gap: 40px; }
+.org-tier { display: flex; flex-direction: column; align-items: center; width: 100%; }
+.tier-label {
+  display: inline-block; text-transform: uppercase; letter-spacing: 0.08em;
+  font-size: 0.78rem; font-weight: 700; color: var(--clay); margin-bottom: 18px;
+}
+.org-tier:not(:first-child)::before {
+  content: ''; width: 2px; height: 24px; background: var(--border); margin-bottom: 18px;
+}
+.org-row { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
+
+.org-card {
+  background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);
+  padding: 24px 20px; text-align: center; width: 220px;
+}
+.org-card img { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; margin: 0 auto 14px; }
+.org-card h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 4px; }
+.org-card .role { color: var(--clay); font-size: 0.82rem; font-weight: 600; }
+
+.org-card.lead { width: 250px; border-top: 4px solid var(--clay); padding: 30px 24px; }
+.org-card.lead img { width: 130px; height: 130px; }
+.org-card.lead h3 { font-size: 1.2rem; }
+
+@media (max-width: 560px) {
+  .org-row { flex-direction: column; align-items: center; }
+}
+
+.milestones { padding: 70px 0; background: white; }
+.milestone-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
+.milestone { border-left: 3px solid var(--clay); padding-left: 18px; }
+.milestone h4 { color: var(--navy); font-size: 1.15rem; margin-bottom: 6px; }
+.milestone span { color: var(--clay); font-weight: 700; }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+}

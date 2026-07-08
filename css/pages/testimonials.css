@@ -1,0 +1,20 @@
+/* ============ TESTIMONIALS PAGE ============ */
+
+.testimonials-section { padding: 60px 0 80px; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.testimonial-card { background: white; border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-sm); border-top: 4px solid var(--clay); }
+.testimonial-stars { color: var(--gold); margin-bottom: 14px; letter-spacing: 2px; }
+.testimonial-card p.quote { color: var(--slate-mid); margin-bottom: 20px; font-style: italic; }
+.testimonial-author { display: flex; align-items: center; gap: 14px; }
+.testimonial-author .avatar {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--navy); color: var(--gold); font-weight: 700;
+  display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+}
+.testimonial-author h4 { font-size: 0.98rem; color: var(--navy); }
+.testimonial-author span { font-size: 0.82rem; color: var(--slate-light); }
+
+.stats-strip { background: var(--navy); color: white; padding: 50px 0; }
+.stats-strip .drill-stats { justify-content: space-around; flex-wrap: wrap; }
+.stats-strip .stat h4 { color: var(--gold); }
+.stats-strip .stat p { color: #cbd5e1; }

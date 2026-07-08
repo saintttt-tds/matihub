@@ -1,0 +1,18 @@
+/* ============ SERVICES PAGE ============ */
+
+.services-detailed { padding: 80px 0; background: white; }
+.service-item { display: flex; gap: 40px; margin-bottom: 60px; align-items: center; flex-wrap: wrap; scroll-margin-top: 100px; }
+.service-icon { flex: 0 0 100px; text-align: center; font-size: 4rem; color: var(--clay); }
+.service-content { flex: 1; min-width: 300px; }
+.service-content h2 { font-size: 2rem; margin-bottom: 15px; color: var(--navy); }
+.service-content ul { list-style: none; margin: 15px 0; }
+.service-content ul li { margin-bottom: 10px; }
+.service-content ul li i { color: var(--clay); margin-right: 10px; }
+
+.process-strip { padding: 60px 0 80px; background: var(--cream); }
+.process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; text-align: center; }
+.process-step .step-num { font-size: 1.8rem; font-weight: 800; color: var(--clay); display: block; margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+  .service-item { flex-direction: column; text-align: center; }
+}
